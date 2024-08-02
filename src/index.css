@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk',sans-serif;
+}
+
+:root{
+  --bg-color:#e7e1e1e8;
+  --foreground-color:#003cff;
+  --primary-text-color:#0a0a0a;
+  --secondary-text-color:#ffffff;
+  --toggle-bg:#f0eb9d;
+
+
+}
+
+[data-theme="dark"]{
+  --bg-color:#000000e0;
+  --foreground-color:#567aff;
+  --primary-text-color:#f6f6f6;
+  --secondary-bg-color:#0a0a0a;
+  --toggle-bg:#283452;
+  --toggle-fg:#00a6ff;
+}
+
+
+.app{
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ying-yang */
+.yin-yang {
+  height: 240px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+   radial-gradient(25% 25% at 50% 25%,#000 24%,#fff 26% 99%,#0000 101%), 
+   radial-gradient(25% 25% at 50% 75%,#fff 24%,#000 26% 99%,#0000 101%), 
+   conic-gradient(#000 50%, #fff 0);
+   animation: spin 1s infinite ease; 
+
+}
+
+input{
+  position: absolute;
+  top: 2em;
+  right:2em;
+ }
+
+label{
+  position: absolute;
+  top: 1.4em;
+  right: 3.5em;
+  font-weight: bold;
+}
+
+.night{
+  color: #fff;
+}
+.day{
+  color: #000;
+}
+.icons{
+  position: absolute;
+  top: 1.4em;
+  right: 9.5em;
+  transition: all 0.5s ease;
+}
+.icons ion-icon{
+  font-size: 22px;
+}
+
+
+@keyframes spin{
+  0%{
+    rotate: 0deg;
+  }
+  10%{
+    rotate: 30deg;
+  }
+  20%{
+    rotate: 60deg;
+  }
+  30%{
+    rotate: 90deg;
+  }
+  40%{
+    rotate: 120deg;
+  }
+  50%{
+    rotate: 150deg;
+  }
+  60%{
+    rotate: 180deg;
+  }
+  70%{
+    rotate: 210deg;
+  }
+  80%{
+    rotate: 240deg;
+  }
+  90%{
+    rotate: 300deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+
+}
