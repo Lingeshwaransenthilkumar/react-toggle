@@ -106,8 +106,14 @@ label{
   80%{
     rotate: 240deg;
   }
+  85%{
+    rotate: 270deg;
+  }
   90%{
     rotate: 300deg;
+  }
+  95%{
+    rotate: 330deg;
   }
   100%{
     rotate: 360deg;
